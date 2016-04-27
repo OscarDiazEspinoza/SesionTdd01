@@ -10,6 +10,11 @@ public class Calculadora {
 		// TODO Auto-generated method stub
 		return (num1+num2);
 	}
+
+	public int resta(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 	
 	

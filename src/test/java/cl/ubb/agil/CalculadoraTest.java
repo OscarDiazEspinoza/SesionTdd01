@@ -36,6 +36,15 @@ public class CalculadoraTest {
 		assertThat(Result,is(6));
 	}
 	
+	@Test
+	public void restadocientosysetentaytresescientoveitisiete() {
+		Calculadora cal = new Calculadora();
+		
+		int Result = cal.resta(200,73);
+		
+		assertThat(Result,is(127));
+	}
+	
 	
 	
 
