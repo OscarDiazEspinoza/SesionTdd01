@@ -1,6 +1,8 @@
 package cl.ubb.agil;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
+import static org.hamcrest.CoreMatchers.is;
+
 
 import org.junit.Before;
 import org.junit.Test;
@@ -14,6 +16,15 @@ public class CalculadoraTest {
 	@Test
 	public void CreateCalculadora() {
 		Calculadora cal = new Calculadora();
+	}
+	
+	@Test
+	public void sumaDosyTresEsCinco() {
+		Calculadora cal = new Calculadora();
+		
+		int Result = cal.suma(2,3);
+		
+		assertThat(Result,is(5));
 	}
 	
 
