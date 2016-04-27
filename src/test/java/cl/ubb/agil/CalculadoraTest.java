@@ -27,5 +27,16 @@ public class CalculadoraTest {
 		assertThat(Result,is(5));
 	}
 	
+	@Test
+	public void sumamenosunoysieteEsseis() {
+		Calculadora cal = new Calculadora();
+		
+		int Result = cal.suma(-1,7);
+		
+		assertThat(Result,is(6));
+	}
+	
+	
+	
 
 }
