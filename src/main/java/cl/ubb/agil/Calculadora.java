@@ -8,7 +8,7 @@ public class Calculadora {
 
 	public int suma(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 5;
+		return (num1+num2);
 	}
 	
 	
