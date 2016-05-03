@@ -5,6 +5,7 @@ import static org.hamcrest.CoreMatchers.is;
 
 
 
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -75,6 +76,13 @@ public class CalculadoraTest {
 		assertThat(cal.divide(36,6),is(6));
 		
 	}
+	
+	@Test (expected = exceptionoperacioninvalida.class)
+	public void docedivididocero(){
+		
+	}
+	
+	
 	
 	
 
