@@ -69,6 +69,13 @@ public class CalculadoraTest {
 		
 	}
 	
+	@Test
+	public void treintayseisdivididoseisesseis(){
+		
+		assertThat(cal.divide(36,6),is(6));
+		
+	}
+	
 	
 
 }
