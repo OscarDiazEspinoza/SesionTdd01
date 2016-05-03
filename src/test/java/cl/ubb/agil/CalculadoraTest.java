@@ -4,6 +4,7 @@ import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
 
 
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,6 +13,11 @@ import cl.ubb.agil.Calculadora;
 
 public class CalculadoraTest {
 	
+	private Calculadora cal;
+	@Before
+	public void setup() throws Exception {
+		cal = new Calculadora();
+	}
 	
 	@Test
 	public void CreateCalculadora() {
@@ -20,40 +26,34 @@ public class CalculadoraTest {
 	
 	@Test
 	public void sumaDosyTresEsCinco() {
-		Calculadora cal = new Calculadora();
 		
-		int Result = cal.suma(2,3);
-		
-		assertThat(Result,is(5));
+		assertThat(cal.suma(2,3),is(5));
 	}
 	
 	@Test
 	public void sumamenosunoysieteEsseis() {
-		Calculadora cal = new Calculadora();
 		
-		int Result = cal.suma(-1,7);
-		
-		assertThat(Result,is(6));
+		assertThat(cal.suma(-1,7),is(6));
 	}
 	
 	@Test
 	public void restadocientosysetentaytresescientoveitisiete() {
-		Calculadora cal = new Calculadora();
 		
-		int Result = cal.resta(200,73);
-		
-		assertThat(Result,is(127));
+		assertThat(cal.resta(200,73),is(127));
 	}
 	
 	@Test
 	public void restamenosdiezycincoesmenosquince() {
-		Calculadora cal = new Calculadora();
 		
-		int Result = cal.resta(-10,5);
-		
-		assertThat(Result,is(-15));
+		assertThat(cal.resta(-10,5),is(-15));
 	}
 	
+	@Test
+	public void multiseisportresesdieciocho(){
+		
+		assertThat(cal.multiplica(6,3),is(18));
+		
+	}
 	
 	
 
