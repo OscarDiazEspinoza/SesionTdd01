@@ -45,6 +45,15 @@ public class CalculadoraTest {
 		assertThat(Result,is(127));
 	}
 	
+	@Test
+	public void restamenosdiezycincoesmenosquince() {
+		Calculadora cal = new Calculadora();
+		
+		int Result = cal.resta(-10,5);
+		
+		assertThat(Result,is(-15));
+	}
+	
 	
 	
 
