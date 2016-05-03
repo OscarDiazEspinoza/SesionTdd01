@@ -13,7 +13,7 @@ public class Calculadora {
 
 	public int resta(int num1, int num2) {
 		// TODO Auto-generated method stub
-		return 127;
+		return (num1-num2);
 	}
 	
 	
