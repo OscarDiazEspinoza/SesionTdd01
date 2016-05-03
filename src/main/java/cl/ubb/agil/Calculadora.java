@@ -15,6 +15,11 @@ public class Calculadora {
 		// TODO Auto-generated method stub
 		return (num1-num2);
 	}
+
+	public int multiplica(int i, int j) {
+		// TODO Auto-generated method stub
+		return 18;
+	}
 	
 	
 	
