@@ -62,6 +62,13 @@ public class CalculadoraTest {
 		
 	}
 	
+	@Test
+	public void docedivididoportresescuatro(){
+		
+		assertThat(cal.multiplica(12,3),is(4));
+		
+	}
+	
 	
 
 }
