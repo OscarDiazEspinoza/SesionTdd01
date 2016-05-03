@@ -55,6 +55,13 @@ public class CalculadoraTest {
 		
 	}
 	
+	@Test
+	public void doceporcuatrocuarentayocho(){
+		
+		assertThat(cal.multiplica(12,4),is(48));
+		
+	}
+	
 	
 
 }
