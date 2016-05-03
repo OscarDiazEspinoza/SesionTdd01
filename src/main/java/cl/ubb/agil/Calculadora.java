@@ -18,7 +18,7 @@ public class Calculadora {
 
 	public int multiplica(int i, int j) {
 		// TODO Auto-generated method stub
-		return 18;
+		return i*j;
 	}
 	
 	
